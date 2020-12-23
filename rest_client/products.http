@@ -1,0 +1,25 @@
+### Get Product By Id
+GET http://localhost:3001/admin/products/1 HTTP/1.1
+
+
+### Get All Products
+GET http://localhost:3001/admin/products HTTP/1.1
+
+
+### Creare A New Product
+POST http://localhost:3001/admin/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "SKU": "062020",
+  "title": "Cadbury Scorched Almonds",
+  "description": "CADBURY milk chocolate coated almonds",
+  "size": "310g",
+  "contains": "Milk, Soy And Almonds. Milk Chocolate (86%), Almonds (12%). Milk Chocolate contains Cocoa Solids 27%, Milk Solids 26%.",
+  "costPrice": 2,
+  "sellingPrice": 5
+}
+
+
+### Delete A Product
+DELETE http://localhost:3001/admin/products/5fcde6973a0a853544687bcb HTTP/1.1
